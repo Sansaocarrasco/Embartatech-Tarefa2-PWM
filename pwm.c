@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 
+// Requisito 1
 #define SERVO_GPIO 22
 #define LED_GPIO 12
 #define PWM_FREQUENCY 50 // 50Hz em que o período é de 20ms
@@ -36,21 +37,25 @@ int main() {
     pwm_set_enabled(slice_num_led, true);
 
     while (true) {
+        // Requisito 2
         // Posição 180 graus
         pwm_setup(SERVO_GPIO, 2400);
         led_brightness(2400);
         sleep_ms(5000);
         
+        // Requisito 3
         // Posição 90 graus
         pwm_setup(SERVO_GPIO, 1470);
         led_brightness(1470);
         sleep_ms(5000);
         
+        // Requisito 4
         // Posição 0 graus
         pwm_setup(SERVO_GPIO, 500);
         led_brightness(500);
         sleep_ms(5000);
         
+        // Requisito 5 e 6
         // Movimento suave entre 0 e 180 graus
         for (uint16_t duty = 500; duty <= 2400; duty += 5) {
             pwm_setup(SERVO_GPIO, duty);
