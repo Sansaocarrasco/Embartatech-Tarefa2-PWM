@@ -4,11 +4,11 @@
 
 #define SERVO_GPIO 22
 #define LED_GPIO 12
-#define PWM_FREQUENCY 50 // 50Hz -> Período de 20ms
+#define PWM_FREQUENCY 50 // 50Hz em que o período é de 20ms
 
 void pwm_setup(uint gpio, uint16_t duty_us) {
     uint slice_num = pwm_gpio_to_slice_num(gpio);
-    uint wrap_value = 25000; // Definição manual para 50Hz (20ms de período)
+    uint wrap_value = 25000; // Definindo manualmente para 50Hz, 20ms de período
     uint16_t level = (duty_us * wrap_value) / 20000; // Convertendo para escala de 20ms
     pwm_set_chan_level(slice_num, pwm_gpio_to_channel(gpio), level);
 }
@@ -26,7 +26,7 @@ int main() {
     gpio_set_function(LED_GPIO, GPIO_FUNC_PWM);
     
     uint slice_num_servo = pwm_gpio_to_slice_num(SERVO_GPIO);
-    pwm_set_wrap(slice_num_servo, 25000); // Ajustando para 50Hz (1 ciclo = 20ms)
+    pwm_set_wrap(slice_num_servo, 25000); // Ajustando para 50Hz, em que 1 ciclo = 20ms
     pwm_set_clkdiv(slice_num_servo, 100.0f);
     pwm_set_enabled(slice_num_servo, true);
     
