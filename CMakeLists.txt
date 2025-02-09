@@ -55,7 +55,7 @@ target_include_directories(pwm PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(pwm 
-        
+        hardware_pwm
         )
 
 pico_add_extra_outputs(pwm)
