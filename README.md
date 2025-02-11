@@ -30,7 +30,7 @@ https://wokwi.com/projects/422425391454372865
 1. Clone este repositório:
 
 ```sh
-git clone https://github.com/Sansaocarrasco/Embartatech-Tarefa2-PWM.git
+git clone https://github.com/Sansaocarrasco/Embarcatech-Tarefa2-PWM.git
 ```
 
 2. Abra o projeto no VS Code.
