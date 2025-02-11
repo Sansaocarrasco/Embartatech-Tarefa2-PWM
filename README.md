@@ -43,6 +43,8 @@ O vídeo associado a esta prática pode ser acessado no link a seguir:
 
 https://www.youtube.com/watch?v=g81hRWS8_QE
 
+*Fonte: autor*
+
 ## 📜 Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
