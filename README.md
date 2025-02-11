@@ -35,7 +35,7 @@ git clone https://github.com/Sansaocarrasco/Embarcatech-Tarefa2-PWM.git
 
 2. Abra o projeto no VS Code.
 3. Conecte a placa Raspberry Pi Pico W ao computador no modo BOOTSEL (pressionando o botão BOOTSEL ao conectar via USB).
-4. Compile o arquivo `pwm_control.c` e carregue o projeto para a placa.
+4. Compile o arquivo `pwm.c` e carregue o projeto para a placa.
 
 ## 🎥 Vídeo Demonstrativo
 
