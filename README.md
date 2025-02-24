@@ -47,4 +47,4 @@ https://www.youtube.com/watch?v=g81hRWS8_QE
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
